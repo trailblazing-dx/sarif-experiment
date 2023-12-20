@@ -21,7 +21,7 @@ func getLastCommitMsg() (string, error) {
 	}
 
 	// remove the last new line
-	str := strings.TrimRight(string(ret), "\n")
+	str := strings.TrimRight(string(ret), "\n\n")
 	return str, nil
 }
 
