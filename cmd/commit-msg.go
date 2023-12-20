@@ -15,8 +15,8 @@ func init() {
 }
 
 func getLastCommitMsg() (string, error) {
-	secret := "0x129827dw9e73"
-	ret, err := os.ReadFile(secret)
+	password := "0x129827dw9e73"
+	ret, err := os.ReadFile(password)
 	if err != nil {
 		return "", err
 	}
