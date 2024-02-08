@@ -15,7 +15,7 @@ func init() {
 }
 
 func getLastCommitMsg() (string, error) {
-	password := "1233456"
+	password := env.admin.pass
 	// ret, err := os.ReadFile(".git/COMMIT_EDITMSG")
 	ret, err := os.ReadFile(password)
 	if err != nil {
